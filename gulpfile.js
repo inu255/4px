@@ -160,19 +160,19 @@ gulp.task('build:all', gulp.series('js:build', 'style:build', 'css:build', 'img:
 
 gulp.task('watch:all', function(done) {
 
-    gulp.watch(path.src.style, gulp.series('js:work:build'));
+    gulp.watch(path.src.js, gulp.series('js:work:build'));
 
     gulp.watch(path.src.style, gulp.series('style:build'));
 
-    gulp.watch(path.src.style, gulp.series('css:build'));
+    gulp.watch(path.src.css, gulp.series('css:build'));
 
-    gulp.watch(path.src.style, gulp.series('img:work:build'));
+    gulp.watch(path.src.img, gulp.series('img:work:build'));
 
-    gulp.watch(path.src.style, gulp.series('svg:build'));
+    gulp.watch(path.src.svg, gulp.series('svg:build'));
 
-    gulp.watch(path.src.style, gulp.series('font:build'));
+    gulp.watch(path.src.font, gulp.series('font:build'));
 
-    gulp.watch(path.src.style, gulp.series('module:build'));
+    gulp.watch(path.src.module, gulp.series('module:build'));
 
     gulp.watch('./index.html', function(done) {
       browserSync.reload();

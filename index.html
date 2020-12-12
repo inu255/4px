@@ -7,11 +7,63 @@
   <title>Document</title>
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./_assets/css/carousel/carousel.css">
+  <link rel="stylesheet" href="./_assets/module/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./_assets/module/owlcarousel/owl.theme.default.min.css">
   <script src="./_assets/js/jquery-3.5.1.min.js"></script><!-- temp!!! -->
 </head>
 <body>
   <section class="carousel">
-    <h1 class="heading">МОДЕЛЬНЫЙ РЯД</h1>
+    <h1 class="carousel__heading">МОДЕЛЬНЫЙ РЯД</h1>
+
+    <div class="carousel__slider">
+      <nav class="carousel__filter js-filter">
+          <div class="carousel__button" data-owl-filter=".carousel__suv">Внедорожники&nbsp;/ кроссоверы</div>
+          <div class="carousel__button" data-owl-filter=".carousel__sedan">Седаны</div>
+          <div class="carousel__button" data-owl-filter=".carousel__cross">Cross Country</div>
+      </nav>
+
+      <div class="carousel__items js-create-carousel owl-carousel">
+          <div class="carousel__item carousel__suv">
+            <img src="./_assets/img/carousel/xc90.jpg" alt="xc90">
+            <h4>1</h4>
+          </div>
+          <div class="carousel__item carousel__suv">
+            <img src="./_assets/img/carousel/xc90.jpg" alt="xc90">
+
+            <h4>2</h4>
+          </div>
+          <div class="carousel__item carousel__suv">
+            <img src="./_assets/img/carousel/xc90.jpg" alt="xc90">
+
+            <h4>3</h4>
+          </div>
+          <div class="carousel__item carousel__sedan">
+            <img src="./_assets/img/carousel/xc90.jpg" alt="xc90">
+
+            <h4>4</h4>
+          </div>
+          <div class="carousel__item carousel__sedan">
+            <img src="./_assets/img/carousel/xc90.jpg" alt="xc90">
+
+            <h4>5</h4>
+          </div>
+          <div class="carousel__item carousel__cross">
+            <img src="./_assets/img/carousel/xc90.jpg" alt="xc90">
+
+            <h4>6</h4>
+          </div>
+          <div class="carousel__item carousel__cross">
+            <img src="./_assets/img/carousel/xc90.jpg" alt="xc90">
+            
+            <h4>7</h4>
+          </div>
+
+      </div>
+    </div>
+
   </section>
+
+  <script src="./_assets/module/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./_assets/js/bundle.min.js"></script>
 </body>
 </html>
