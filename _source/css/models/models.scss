@@ -1,0 +1,97 @@
+@import '_var.scss';
+@import '_mixin.scss';
+
+.models {
+  font-family: $font_volvo;
+  // height: 100vh;
+  padding: 50px;
+  @media screen and (max-width: 420px) {
+    padding: 20px;
+  }
+  @media screen and (max-width: 320px) {
+    padding-top: 0;
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    width: 100%;
+    margin: 23px 0;
+    text-align: center;
+    @media screen and (max-width: 320px) {
+      font-size: 26px;
+    }
+  }
+
+  &__tabs {
+    width: 60%;
+    margin: 0 auto;
+    @media screen and (max-width: 1500px) {
+      width: 75%;
+    }
+    @media screen and (max-width: 1150px) {
+      width: 85%;
+    }
+    @media screen and (max-width: 950px) {
+      width: 100%;
+    }
+    @include mobile_w100;
+  }
+
+  &__controls {
+    font-size: 16px;
+    line-height: 19px;
+    width: 50%;
+    margin: 27px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @media screen and (max-width: 320px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 1300px) {
+      width: 65%;
+    }
+    @include mobile_w100;
+  }
+
+  &__button {
+    cursor: pointer;
+    text-align: center;
+    color: #8A8A8B;
+  }
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__show-suv {
+    color: #161618;
+    @include mobile_w100;
+    @media screen and (max-width: 420px) {
+      margin-bottom: 0.7em;
+    }
+  }
+
+  &__show-sedan {
+    text-align: right;
+    @media screen and (max-width: 420px) {
+      width: 33%;
+    }
+  }
+
+  &__show-cross {
+    text-align: left;
+    @media screen and (max-width: 420px) {
+      width: 47%;
+    }
+  }
+
+  &__name {
+    margin: 0.8em;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161618;
+  }
+}
