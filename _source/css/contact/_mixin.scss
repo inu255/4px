@@ -1,0 +1,5 @@
+@mixin mobile_w100 {
+  @media screen and (max-width: 420px) {
+    width: 100%;
+  }
+}

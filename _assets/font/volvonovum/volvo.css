@@ -2,7 +2,7 @@
 	font-family: 'Volvo Novum';
 	src: url('Volvo Novum-Light.eot');
 	src: url('Volvo Novum-Light.eot?#iefix') format('embedded-opentype'), url('Volvo Novum-Light.woff') format('woff'), url('Volvo Novum-Light.ttf') format('truetype');
-	font-weight: lighter;
+	font-weight: 300;
 	font-style: normal;
 }
 
@@ -19,5 +19,13 @@
 	src: url('Volvo Novum-Regular.eot');
 	src: url('Volvo Novum-Regular.eot?#iefix') format('embedded-opentype'), url('Volvo Novum-Regular.woff') format('woff'), url('Volvo Novum-Regular.ttf') format('truetype');
 	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Volvo Novum';
+	src: url('Volvo Novum-Medium.eot');
+	src: url('Volvo Novum-Medium.eot?#iefix') format('embedded-opentype'), url('Volvo Novum-Medium.woff') format('woff'), url('Volvo Novum-Medium.ttf') format('truetype');
+	font-weight: 500;
 	font-style: normal;
 }

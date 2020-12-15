@@ -1,0 +1,3 @@
+@function scale_font($original) {
+  @return $original * 0.8;
+}

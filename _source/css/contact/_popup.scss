@@ -1,0 +1,144 @@
+@import '_var.scss';
+@import '_mixin.scss';
+
+.popup {
+  background-color: white;
+  font-size: 14px;
+  line-height: 19px;
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+	&__heading {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color_active;
+	}
+
+  &__heading--second {
+    margin-top: 70px;
+  }
+
+  &__subheading {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $color_active;
+    @media screen and (max-width: 330px) {
+      font-size: 18px;
+    }
+  }
+
+	&__text {
+    text-align: center;
+    color: #4F4F4F;
+    margin-bottom: 25px;
+    width: 59%;
+    margin: 38px auto 98px auto;
+    @media screen and (max-width: 330px) {
+      width: 72%;
+    }
+	}
+
+	&__form {
+
+	}
+
+	&__tel {
+    width: calc(100% - 2.4em - 2px);
+    padding: 1.2em;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 15px;
+	}
+
+  &__tel::placeholder {
+    color: $color_active;
+  }
+
+  &__tel:focus {
+    outline: none;
+    border: 1px solid $color_active;
+  }
+
+	&__button {
+    color: #FFFFFF;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    width: 100%;
+    background-color: #007BCD;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+	}
+
+  &__button svg {
+    margin-left: 0.5em;
+  }
+
+  &__button:hover {
+    background-color: #008EEC;
+  }
+
+	&__confirm {
+    display: flex;
+    align-items: flex-start;
+	}
+
+
+	&__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+	}
+
+  &__checkbox-custom {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &__checkbox-custom:before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #E0E0E0;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 85% 85%;
+  }
+
+  &__checkbox:checked+&__checkbox-custom:before {
+    background-color: white;
+    background-image: url("data:image/svg+xml;utf8,%3csvg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 4.73333L3.86364 8L10 1' stroke='%23007BCD' stroke-width='1.5'/%3e%3c/svg%3e");
+  }
+
+
+  &__checkbox-text {
+    cursor: pointer;
+  }
+
+  &__terms-link {
+    text-decoration: underline;
+    color: #161618;
+    margin-left: auto;
+  }
+
+  &__terms-link:hover {
+    color: #007BCD;
+  }
+
+}
