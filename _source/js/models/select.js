@@ -3,7 +3,7 @@ $('.js-select-model').click(function() {
   selectModel($(this));
   let selectedModel = $(this).find('.js-model-image').html();
 
-  $('.js-full-image').attr('src', './_assets/img/info/' + selectedModel + '.png');
+  $('.js-full-image').attr('src', './assets/img/info/' + selectedModel + '.png');
   $('.js-model-name').html(selectedModel);
   output.modelName = selectedModel;
 })
