@@ -5,6 +5,7 @@ const gulp = require('gulp'),
       cssnano = require('gulp-cssnano'), //!!!!!!!!!!!!
       uglify = require('gulp-uglify'),
       imagemin = require('gulp-imagemin'),
+      inject = require('gulp-inject-string'),
       rename = require('gulp-rename'),
       svgmin = require('gulp-svgmin'),
       cheerio = require('gulp-cheerio'),
@@ -38,6 +39,7 @@ const path = {
 gulp.task('js:work:build', function(cb) {
     pump([
         gulp.src(path.src.js),
+
         concat('bundle.min.js'),
         browserSync.stream(),
         gulp.dest(path.build.js)
@@ -47,6 +49,8 @@ gulp.task('js:work:build', function(cb) {
 gulp.task('js:build', function(cb) {
     pump([
         gulp.src(path.src.js),
+        inject.prepend('\njQuery(document).ready(function ($) {\n'),
+        inject.append('});\n'),
         uglify(),
         concat('bundle.min.js'),
         browserSync.stream(),
