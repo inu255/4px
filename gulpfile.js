@@ -25,14 +25,14 @@ const path = {
         favicon: './_source/favicon/*.*'
       },
       build: {
-        js: './_assets/js/',
-        style: './_assets/css/',
-        css: './_assets/css/',
-        img: './_assets/img/',
-        svg: './_assets/svg/',
-        font: './_assets/font/',
-        module: './_assets/module/',
-        favicon: './_assets/favicon/'
+        js: './assets/js/',
+        style: './assets/css/',
+        css: './assets/css/',
+        img: './assets/img/',
+        svg: './assets/svg/',
+        font: './assets/font/',
+        module: './assets/module/',
+        favicon: './assets/favicon/'
       }
 };
 
